@@ -1,2 +1,2 @@
 # MiguelBelotto00.github.io
-Curriculum
+Pagina que utilizo para mi CV.
