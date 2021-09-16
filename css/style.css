@@ -14,6 +14,9 @@ body{
 }
 /*Quitando todos los stilos a los enlaces*/
 /*Estilos del Header*/
+.header{
+    grid-column: 1/-1;
+}
 .header,
 .contenedor{
     width: 100%;
@@ -106,17 +109,20 @@ a:link{
 }
 .img-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(150px,150px));
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
     grid-gap: 100px;
     justify-content: center;
     align-items: center;
     grid-auto-flow: dense;
     padding: 2vmin;
 }
-.img-item{
+.img-container img{
     max-width: 100%;
+}
+.img-item{
     display: flex;
     align-items: center;
+    justify-content: center;
     object-fit: cover;
 }
 .img-item:hover{
@@ -136,6 +142,7 @@ a:link{
     align-items: center;
     grid-auto-flow: dense;
     padding: 2vmin;
+    margin-top: 10px;
 }
 .logos-redes{
     width: 100%;
