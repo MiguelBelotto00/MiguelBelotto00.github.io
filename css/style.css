@@ -27,8 +27,8 @@ body{
 }
 .logo img{
    justify-content: start;
-    max-width: 350px;
-    max-height: 200px;
+    max-width: 100%;
+    height: auto;
 }
 .barra_nav{
     display: grid;
@@ -40,7 +40,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid white;
+    /* border-left: 1px solid white; */
 }
 .menu-item{
     font-size: 1.5rem;
@@ -92,7 +92,7 @@ a:link{
     padding: 2vmin;
     text-align: left;
     font-size: 2rem;
-}
+} 
 .imagen_personal{
     display: flex;
     width: 50%;
@@ -100,42 +100,59 @@ a:link{
     align-items: end;
 }
 .imagen_personal img{
+    position: relative;
     object-position: right;
     object-fit: contain;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
+    animation-name: logo_animation;
+    animation-duration: 3500ms;
+    animation-timing-function: cubic-bezier(0.10,0.10,0.80,0.80);
 }
 .title{
     text-align: center;
 }
 .img-container{
     display: grid;
+    position: relative;
     grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
     grid-gap: 100px;
     justify-content: center;
     align-items: center;
     grid-auto-flow: dense;
     padding: 2vmin;
+    margin-bottom: 10px;
+    animation-name: logo_lenguage;
+    animation-duration: 3500ms;
+    animation-timing-function: cubic-bezier(0.1,0.1,0.8,0.8) ;
 }
 .img-container img{
     max-width: 100%;
-}
-.img-item{
+    height: auto;
+    padding-left: 2vh;
     display: flex;
     align-items: center;
     justify-content: center;
     object-fit: cover;
 }
+.img-item{
+    filter: saturate(0);
+}
+
 .img-item:hover{
     transform: scale(1.2);
+    filter: none;
 }
 /*Fin del Estilo para el articulo*/
 
 /*Inicio de estilos para el footer*/
 .footer{
     margin-top: auto;
+    /* padding-top: 50%; */
 }
 .contenedor-logos{
     display: grid;
+    position: relative;
     grid-template-columns: repeat(auto-fit,minmax(50px,75px));
     grid-gap: 100px;
     justify-content: center;
@@ -143,10 +160,13 @@ a:link{
     grid-auto-flow: dense;
     padding: 2vmin;
     margin-top: 10px;
+    animation-name: footer_logo;
+    animation-duration: 3500ms;
+    animation-timing-function: cubic-bezier(0.1,0.1,0.8,0.8);
 }
 .logos-redes{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     filter: saturate(0);
 }
 .logos-redes:hover{
