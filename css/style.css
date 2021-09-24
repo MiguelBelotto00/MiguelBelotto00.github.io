@@ -1,176 +1,127 @@
 *{
     box-sizing: border-box;
 }
-/*Estilos para el Body*/
 body{
-    background-image: radial-gradient(circle,rgb(44, 44, 46),rgb(0, 0, 0));
-    color: #eee;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family:'Montserrat','Open Sans','Roboto', sans-serif;
+    background-color: black;
+    color: white;
 }
-/*Quitando todos los stilos a los enlaces*/
-/*Estilos del Header*/
+/*Inicio del Estilo del Header*/
 .header{
-    grid-column: 1/-1;
-}
-.header,
-.contenedor{
-    width: 100%;
-    padding: 1vmin;
+    background-color: black;
     display: flex;
+    position: fixed;
+    z-index: 10;
     flex-direction: row;
-    margin-bottom: 30px;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 75px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
-.logo img{
-   justify-content: start;
-    max-width: 100%;
+.icono_principal{
+    width: 100%;
     height: auto;
+    max-width: 250px;
+    margin: 0 auto 10px auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
-.barra_nav{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px,1400px));
-}
-.menu{
+nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* border-left: 1px solid white; */
 }
-.menu-item{
-    font-size: 1.5rem;
-    margin: 30px;
-    justify-content: center;
-    text-align: center;
-    height: 50px;
-    width: 200px;
-    line-height: 50px;
+.list-item{
+    margin-right: 50px;
+    font-size: 5vh;
 }
-.menu-item a{
+a{
     text-decoration: none;
-    cursor: pointer;
+    color: #eee;
 }
 a:visited{
-    color: inherit;
+    color: #eee;
 }
-a:link{
-    color: inherit;
-}
-.menu-item:hover{
-    border-right: 1px solid white;
-    border-left: 1px solid white;
-    Text-shadow: 0px 2px 20px rgb(245, 236, 105);
-    color: rgb(105, 200, 245);
-}
-/*Final de Estilos para el Header*/
-
-/*Inicio de Estilos para el Articulo*/
-.articulo{
-    background-color:  #fffbfb;
-    color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto';
-    font-size: 1rem;
-    width: 100%;
-    height: 50rem;
-    padding: 2vmin;
-}
-.info_personal{
-    display: flex;
-    flex-direction: row;
-    flex-basis: auto;
-    margin-bottom: 30px;
+/*Fin de los estilos del Header*/
+/*Inicio de estilos main*/
+main{
+    position: relative;
+    margin: 150px auto 100px auto;
 }
 .sobre_mi{
-    width: 30%;
-    padding: 2vmin;
-    text-align: left;
-    font-size: 2rem;
-} 
-.imagen_personal{
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-    align-items: end;
-}
-.imagen_personal img{
     position: relative;
-    object-position: right;
-    object-fit: contain;
-    max-width: 100%;
-    height: auto;
-    animation-name: logo_animation;
-    animation-duration: 3500ms;
-    animation-timing-function: cubic-bezier(0.10,0.10,0.80,0.80);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
-.title{
+.texto_sobre_mi{
+    margin: 10px auto 10px 20px;
+    text-align: left;
+    font-size: 3vh;
+}
+.imagen_programador{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-width: 400px;
+    max-width: 5700px;
+    left: 0;
+    animation-name: programador;
+    animation-timing-function: cubic-bezier(0.2,0.2,0.8,0.8);
+    animation-duration: 3500ms;
+}
+h2{
     text-align: center;
 }
-.img-container{
+.container-lenguage{
     display: grid;
     position: relative;
-    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
-    grid-gap: 100px;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(250px,300px));
     grid-auto-flow: dense;
-    padding: 2vmin;
-    margin-bottom: 10px;
-    animation-name: logo_lenguage;
-    animation-duration: 3500ms;
-    animation-timing-function: cubic-bezier(0.1,0.1,0.8,0.8) ;
-}
-.img-container img{
-    max-width: 100%;
-    height: auto;
-    padding-left: 2vh;
-    display: flex;
     align-items: center;
     justify-content: center;
-    object-fit: cover;
+    text-align: center;
+    animation-name: skills;
+    animation-timing-function: cubic-bezier(0.2,0.2,0.8,0.8);
+    animation-duration: 3500ms;
 }
-.img-item{
-    filter: saturate(0);
+.html-5{
+    width: 100%;
+    max-width: 250px ;
+    height: auto;    
 }
-
-.img-item:hover{
-    transform: scale(1.2);
-    filter: none;
+.css-3{
+    width: 100%;
+    max-width: 250px ;
+    height: auto;    
 }
-/*Fin del Estilo para el articulo*/
-
-/*Inicio de estilos para el footer*/
-.footer{
+.javascript{
+    width: 100%;
+    max-width: 250px ;
+    height: auto;    
+}
+.python{
+    width: 100%;
+    max-width: 250px ;
+    height: auto;    
+}
+/*Fin de estilos main*/
+footer{
     margin-top: auto;
-    /* padding-top: 50%; */
-}
-.contenedor-logos{
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(auto-fit,minmax(50px,75px));
-    grid-gap: 100px;
-    justify-content: center;
-    align-items: center;
-    grid-auto-flow: dense;
-    padding: 2vmin;
-    margin-top: 10px;
-    animation-name: footer_logo;
-    animation-duration: 3500ms;
-    animation-timing-function: cubic-bezier(0.1,0.1,0.8,0.8);
+    background-color: rgb(15, 15, 15);
 }
 .logos-redes{
-    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.logos-redes figure{
+    width: 100%;
+    max-width: 150px;
     height: auto;
-    filter: saturate(0);
 }
-.logos-redes:hover{
-    filter: none;
-    transform: scale(1.2);
-}
-/*Fin de Estilos para el Footer*/
