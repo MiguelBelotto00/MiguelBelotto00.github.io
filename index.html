@@ -13,12 +13,8 @@
 <body>
 <!--Inicio del Header-->    
     <header id="header" class="header">
-            <figure>
-                <img class="icono_principal" src="img/logo_principal.png">
-            </figure>
             <nav class="barra_navegacion">
                 <ul>
-                <li class="list-item"><a href="https://miguelbelotto00.github.io/">Inicio</a></li>
                 <li class="list-item"><a href="#sobre_mi">Sobre mi</a></li>
                 <li class="list-item"><a href="#contactos">Contacto</a></li>
                 </ul>
@@ -27,35 +23,37 @@
 <!--Fin del Header-->    
 <!--Inicio del Main-->
 <main>
-    <article class="sobre_mi" id="#sobre_mi">
-        <p class="texto_sobre_mi">Hola!, soy Miguel Belotto un Apasionado por la programación y sus distintas areas. Actualmente me enfocare en el desarrollo web, pero siempre abierto para hacer otras cosas... </p>
+    <article class="sobre_mi" id="sobre_mi">
         <figure>
             <img class="imagen_programador" src="img/developer_logo.svg">
         </figure>
-    </article>
-    <h2>Skill</h2>
-    <section class="container-lenguage">
-            <figure>
+    <section >
+            <figure class="container-lenguage">
                 <img class="html-5" src="img/html5.svg">
-                <figcaption>Este sitio fue creado con HTML5</figcaption>
-            </figure>
-            <figure>
-                    <img class="css-3" src="img/css-3.svg">
-                    <figcaption>El estilo fue dado con css</figcaption>
-            </figure>
-            <figure>
-                <img class="javascript" src="img/icons8-javascript.svg">
-                <figcaption>Y si automatizo eso?</figcaption>
-             </figure>
-             <figure>
-                <img class="python" src="img/piton.svg">
-                <figcaption>Django sin cadenas...</figcaption>
+                <img class="css-3" src="img/css-3.svg">
+                <img class="java" src="img/java.svg">
+                <img class="kotlin" src="img/kotlin.svg">
+                <img class="android" src="img/androide.png">
              </figure>
     </section>
+      <div class="container-about-me">
+        <p class="texto_sobre_mi">
+            <br>Soy Miguel Belotto estudiante de Ingeniería en Informática, actualmente estoy buscando mi primer empleo en la industria de la tecnología como desarrollador de aplicaciones para la plataforma Android.
+             Busco mejorar mis habilidades tanto blandas como técnicas y así también contribuir con la empresa que me dé esta oportunidad.
+            <h3>Estos son algunos proyectos en los que trabaje:</h3>
+            <div class="card-project">
+                <img class="image-card" src="img/Pokedexfirst.jpg">
+                <div>
+                    <p class="card-text">Pokedex en el lenguaje <b>Java</b>,consumiendo la pokeapi.<br>Donde utilice las librerias:<br>RecyclerView<br>Retrofit<br>Picasso</p>
+                    <a class="card-link" href="https://github.com/MiguelBelotto00/Pokedex">Link</a>
+                </div>
+            </div>
+        </p>
+    </div>
+    </article>
 </main>
 <!--Fin del Main-->
 <footer>
-    <h2>Contacto</h2>
     <div class="logos-redes" id="contactos">
         <figure>
            <a href="https://github.com/MiguelBelotto00"><img src="img/Github-logo.svg"></a>

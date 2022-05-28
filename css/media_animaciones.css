@@ -12,6 +12,10 @@
     .col-md-3{width:25% ;}
     .col-md-2{width: 16.66667%;}
     .col-md-1{width: 8.33333%;}
+    main{
+        position: relative;
+        margin: 5px auto 100px auto;
+    }
     .list-item{
         font-size: 3vh;
         padding-right: 20px;
@@ -32,15 +36,22 @@
     .col-sm-3{width:25% ;}
     .col-sm-2{width: 16.66667%;}
     .col-sm-1{width: 8.33333%;}
+    main{
+        position: relative;
+        margin: 5px auto 100px auto;
+    }
     .list-item{
-        font-size: 4vh;
-        margin-right: 40px;
+        font-size: 3vh;
+        margin-right: 20px;
     }
     .header{
-        flex-direction: column;
+        flex-direction: row;
+        height: 5vh;
     }
-    main{
-        margin-top: 300px;
+    .sobre_mi_child_list{
+        list-style: square;
+        font: inherit;
+        font-size: 2.0vh;
     }
     .sobre_mi{
         flex-direction: column;
@@ -50,7 +61,7 @@
     }
 }
 /*Mobile Phones extra small*/
-@media (max-width:575px ){
+@media (max-width:575px){
     .col-12{width:100%;}
     .col-11{width:91.66667%}
     .col-10{width: 83.33333%;}
@@ -71,7 +82,7 @@
         flex-direction: column;
     }
     main{
-        margin-top: 300px;
+        margin-top: 20px;
     }
     .sobre_mi{
         flex-direction: column;
@@ -89,19 +100,5 @@
     }
     100%{
         opacity: 1;
-    }
-}
-@keyframes skills {
-    0%{
-        opacity: 0;
-        right: 100px;
-    }
-    50%{
-        opacity: 0.5;
-        right: 50px;
-    }
-    100%{
-        opacity: 1;
-        right: 0px;
     }
 }
